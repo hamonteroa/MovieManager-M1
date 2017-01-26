@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail_movie"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/black"
+    tools:context="com.hamonteroa.moviemanager.DetailMovieActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/action_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/colorPrimary"
+
+        android:background="@android:color/darker_gray">
+
+        <android.support.v4.widget.Space
+            android:id="@+id/nr1_space_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <ImageButton
+            android:id="@+id/watchlist_imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/watchlist_empty"/>
+
+        <android.support.v4.widget.Space
+            android:id="@+id/nr2_space_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/favorite_imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star_empty"/>
+
+        <android.support.v4.widget.Space
+            android:id="@+id/nr3_space_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/overview_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/white"
+        android:text="ipso lurem ipso lurem ipso lurem ipso lurem ipso lurem ipso lurem ipso lurem ipso lurem ipso lurem ipso lurem ipso lurem ipso lurem ipso lurem ipso lurem ipso lurem "
+        android:layout_above="@+id/action_toolbar"
+        android:layout_marginBottom="4dp"/>
+
+    <!--<com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/poster_networkImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher"
+        android:layout_above="@+id/overview_textView" />-->
+    <ImageView
+        android:id="@+id/poster_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        tools:src="@mipmap/ic_launcher"
+        android:layout_above="@+id/overview_textView" />
+
+</RelativeLayout>
